@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding-top: 25px; /* Espaço para o menu fixo no topo */
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: #f4f4f4; /* Cor de fundo da página */
+}
+
+header {
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    background-color: #4169E1; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+}
+
+.logotop img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.menu {
+    position: fixed; /* Mantém o menu fixo em cima */
+    top: 0; 
+    left: 0; /* Alinha o menu à esquerda da página */
+    width: 100%; /* O menu ocupa toda a largura da página */
+    text-align: center; /* Centraliza o texto do menu */
+    background-color: #4169E1; /* Cor de fundo do menu */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+.menu ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 10px 0;
+}
+
+.menu li {
+    display: inline; /* Exibe os itens do menu em linha */
+    margin: 0 18px; /* Espaço horizontal entre os itens do menu */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none; 
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+.content {
+    display: flex; /* Utiliza flexbox para o layout do conteúdo */
+    flex-direction: column; /* Muda a direção para coluna */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o conteúdo com margem em cima e embaixo */
+    padding: 20px; /* Espaçamento interno do conteúdo */
+    background: white; /* Cor de fundo do conteúdo */
+    border-radius: 20px; /* Bordas arredondadas do conteúdo */
+    box-shadow: 3 6 15px rgba(0, 0, 0, 0.1); /* Sombra ao redor do conteúdo */
+}
+
+.column-group {
+    display: flex; /* Utiliza flexbox para o layout dos grupos de colunas */
+    flex-wrap: wrap; /* Permite que as colunas se movam para a próxima linha */
+    justify-content: space-between; /* Distribui espaço entre as colunas */
+    margin: 20px 0; /* Espaço entre grupos de colunas*/
+}
+
+.column {
+    flex: 1 1 40%; /* Permite que as colunas ocupem até 40% do espaço disponível */
+    margin: 15px; /* Espaço em torno de cada coluna */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.titulos {
+    background-color: #4169E1; /* Cor de fundo dos títulos */
+    color: white; /* Cor do texto dos títulos */
+    padding: 2px 10px; /* Espaçamento interno do título */
+    border-radius: 200px; /* Bordas arredondadas do título */
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.column p {
+    margin: 10px 0; /* Espaço acima e abaixo dos parágrafos */
+    font-size: 1em; /* Tamanho da fonte */
+    line-height: 1.5; /* Aumenta a altura da linha para melhor legibilidade */
+}
+
+.imagem-centralizada {
+    width: 80%; /* A imagem ocupa 80% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Altera o display para block para permitir margens automáticas */
+    margin-left: auto; /* Adiciona margem automática à esquerda */
+    margin-right: auto; /* Adiciona margem automática à direita */
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%; /* Empilha colunas em telas menores */
+    }
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 2px; /* Espaçamento interno do rodapé */
+    background-color: #4169E1; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    position: relative; /* Define a posição relativa do rodapé */
+    bottom: 0; /* Alinha o rodapé ao fundo do contêiner */
+    width: 100%; /* O rodapé ocupa toda a largura da página */
+}
